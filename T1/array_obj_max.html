@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const emp = [{ name: 'prq', age: 20 }, { name: 'xyz', age: 15 }, { name: 'mno', age: 18 }]
+        var e = emp.sort((x, y) => y.age - x.age)
+        for (e1 of e) {
+            console.log(e1.name + "  " + e1.age)
+        }
+        console.log("Badha thi nano " + e[e.length - 1].age + " " + e[e.length - 1].name)
+        console.log("Badha thi moto " + Math.max(...emp.map(e => e.age)))
+    </script>
+</body>
+
+</html>

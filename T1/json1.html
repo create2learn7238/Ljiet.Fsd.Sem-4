@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json </title>
+</head>
+
+<body>
+    <script>
+        var data = {
+            name: "Dixit Patel",
+            age: 21,
+            city: "Ahmedabad",
+            present: false,
+            marks: { fsd2: 20, python2: 18 },
+            friend: ["xyz", "Pqr", "mno"],
+            test: { test1: { b1: 35, b2: 36, b3: 37 } }
+        }
+        console.log(data)
+        document.writeln(data.name)
+        document.writeln(data["age"])
+        document.write("<br> python mark :" + data.marks.python2)
+        document.write("<br> Fsd mark :" + data["marks"]["fsd2"])
+        document.write("<br>" + data.test.test1.b3)
+    </script>
+
+</body>
+
+</html>

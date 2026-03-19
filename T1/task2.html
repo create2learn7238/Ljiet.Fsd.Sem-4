@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json </title>
+</head>
+
+<body>
+    <script>
+        var data = {
+            name: "Dixit Patel",
+            age: 21,
+            city: "Ahmedabad",
+            present: false,
+            marks: { fsd2: 20, python2: 18 },
+            friend: ["xyz", "Pqr", "mno"],
+            test: { test1: { b1: 35, b2: 36, b3: 37 } }
+        }
+        var d2 = JSON.stringify(data)
+        var data1 = '{name:"aaa",age:"101"}'
+        document.writeln("<h3> With Quote :  </h3>" + data1 + "<br>")
+        document.writeln("<h3> With json method stringify : </h3> " + d2)
+
+        document.writeln(data.name)
+        console.log(d2.age) // undefined
+        var p1 = JSON.parse(d2)
+        document.writeln("<br> " + p1.age)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="a"></h2>
+    <h3 id="b"></h3>
+    <button id="btn" onclick="disp()">Click Here</button>
+    <script>
+
+        var str = '{"name":"Dixit","age":"21","dob":"2005-11-13"}'
+        function disp() {
+            var obj = JSON.parse(str)
+
+            obj.age = 20 //update 
+            obj["Name"] = "Patel" //upadte 2 
+
+            let a = document.getElementById('a')
+            a.innerHTML = (`My Name is ${obj.name}`)
+
+            document.getElementById('b').innerHTML = (`I am  ${obj.age} year old <br> My DOB is ${new Date(obj.dob)}`)
+
+        }
+    </script>
+</body>
+
+</html>

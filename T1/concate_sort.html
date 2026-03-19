@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Name </title>
+</head>
+
+<body>
+    <script>
+        var data = {
+            div1: {
+                'name': ['x', 'p', 'a', 'y', 'n'],
+                'age': [10, 20, 11, 9, 12]
+            },
+            div2: {
+                'name': ['t', 'b', 'f', 'v', 'm'],
+                'age': [11, 10, 5, 20, 12, 7, 2, 1]
+            }
+        }
+        var age = data.div1.age.concat(data.div2.age).sort((a, b) => a - b)
+        for (i of age) {
+            document.write(`<h3> student ${i}</h3>`)
+        }
+
+        var a = data.div1.name.concat(data.div2.name).sort()
+        for (i of a) {
+            document.write(`<h2> student ${i}</h2>`)
+        }
+
+        // for (i in a) {
+        //     document.write(`<h2> student ${a(i)}</h2>`)
+        // }
+
+    </script>
+</body>
+
+</html>
