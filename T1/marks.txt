@@ -1,0 +1,7 @@
+Marks of T1:20
+    Marks of T2:25
+    Marks of T3:22
+    Marks of T4:21
+    Marks Total=88
+    Avg=22
+    
