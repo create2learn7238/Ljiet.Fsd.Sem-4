@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration: double;
+    background-color: lightcoral;
+
+}
+
+div {
+    font-size: 50px;
+    margin: auto;
+    border: 5px solid green;
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+img {
+    column-rule-width: 2px;
+}

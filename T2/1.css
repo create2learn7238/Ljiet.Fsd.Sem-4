@@ -1,0 +1,10 @@
+.center {
+    text-align: center;
+    font-size: 55px;
+    color: red;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
