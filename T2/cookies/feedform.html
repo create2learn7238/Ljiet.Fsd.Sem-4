@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Ensures padding doesn't affect width */
+        }
+
+        .rating-group {
+            margin: 15px 0;
+        }
+
+        .rating-group label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/" method="post">
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Message:</label>
+        <textarea name="msg" cols="30" rows="5">Enter your message here...</textarea>
+
+        <div class="rating-group">
+            <label>Rating:</label><br>
+            <input type="radio" name="feed" value="10"> 10
+            <input type="radio" name="feed" value="9"> 9
+            <input type="radio" name="feed" value="8"> 8
+            <input type="radio" name="feed" value="7"> 7
+            <input type="radio" name="feed" value="6"> 6
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
