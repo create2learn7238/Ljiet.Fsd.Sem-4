@@ -1,0 +1,28 @@
+#ec {
+    color: red;
+    animation: alternate-reverse;
+    font-style: oblique;
+    border: 5px solid black;
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: green;
+    background-color: lightgreen;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+a {
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    margin: 88%;
+}
